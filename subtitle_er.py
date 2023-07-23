@@ -12,7 +12,7 @@ def clear_state(state):
 
 def add_phrase(state, output):
     phrase =  " ".join(state["phrase"])
-    if phrase.isspace():
+    if phrase.isspace() or phrase == "":
         phrase = "..."
         
     output.append({
